@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="ZDCCollectionNormalCell" customModule="DouYuZB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="218" height="156"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="218" height="156"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_live_cate_normal" translatesAutoresizingMaskIntoConstraints="NO" id="3yp-Qx-gLF">
+                        <rect key="frame" x="0.0" y="128" width="14" height="14"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKx-gY-N3v">
+                        <rect key="frame" x="19" y="128" width="28.5" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="live_cell_default_phone" translatesAutoresizingMaskIntoConstraints="NO" id="UYh-Jn-FOF" customClass="live_cell_default_phone">
+                        <rect key="frame" x="0.0" y="0.0" width="218" height="123"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hehe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYO-Mc-gYG">
+                        <rect key="frame" x="5" y="104" width="26" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vu5-bu-1QN">
+                        <rect key="frame" x="144" y="104" width="69" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="66666didi" image="home_live_player_normal"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="mKx-gY-N3v" secondAttribute="trailing" constant="5" id="Azr-e4-5Fg"/>
+                <constraint firstItem="Vu5-bu-1QN" firstAttribute="trailing" secondItem="UYh-Jn-FOF" secondAttribute="trailing" constant="-5" id="CDY-B3-ba4"/>
+                <constraint firstItem="zYO-Mc-gYG" firstAttribute="leading" secondItem="UYh-Jn-FOF" secondAttribute="leading" constant="5" id="I2K-ft-DXF"/>
+                <constraint firstAttribute="trailing" secondItem="mKx-gY-N3v" secondAttribute="trailing" constant="5" id="POg-lo-6vp"/>
+                <constraint firstAttribute="bottom" secondItem="3yp-Qx-gLF" secondAttribute="bottom" constant="14" id="QCr-yZ-9zf"/>
+                <constraint firstItem="Vu5-bu-1QN" firstAttribute="bottom" secondItem="UYh-Jn-FOF" secondAttribute="bottom" constant="-5" id="QIz-nd-SH6"/>
+                <constraint firstItem="UYh-Jn-FOF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="V8j-xw-NF0"/>
+                <constraint firstItem="mKx-gY-N3v" firstAttribute="centerY" secondItem="3yp-Qx-gLF" secondAttribute="centerY" id="btX-lp-778"/>
+                <constraint firstItem="mKx-gY-N3v" firstAttribute="leading" secondItem="3yp-Qx-gLF" secondAttribute="trailing" constant="5" id="gG9-1d-PUe"/>
+                <constraint firstItem="3yp-Qx-gLF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hbX-cs-qi1"/>
+                <constraint firstAttribute="trailing" secondItem="UYh-Jn-FOF" secondAttribute="trailing" id="qI1-5n-w5h"/>
+                <constraint firstItem="zYO-Mc-gYG" firstAttribute="bottom" secondItem="UYh-Jn-FOF" secondAttribute="bottom" constant="-5" id="qIS-s0-v5C"/>
+                <constraint firstItem="UYh-Jn-FOF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wrE-bo-mhQ"/>
+                <constraint firstItem="3yp-Qx-gLF" firstAttribute="top" secondItem="UYh-Jn-FOF" secondAttribute="bottom" constant="5" id="y9w-B7-DTo"/>
+            </constraints>
+            <size key="customSize" width="218" height="156"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Azr-e4-5Fg"/>
+                    <exclude reference="POg-lo-6vp"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="291" y="330"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="home_live_cate_normal" width="14" height="14"/>
+        <image name="home_live_player_normal" width="14" height="14"/>
+        <image name="live_cell_default_phone" width="103" height="103"/>
+    </resources>
+</document>
