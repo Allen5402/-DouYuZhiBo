@@ -21,6 +21,7 @@ private let kHeaderViewID = "kHeaderViewID"
 class ZDCRecommendViewController: UIViewController {
 
     //MARK:- 懒加载属性
+    private lazy var recommendViewModel: ZDCRecommendViewModel = ZDCRecommendViewModel()
     private lazy var collcetionView : UICollectionView = {
         //1、创建布局
         let layout = UICollectionViewFlowLayout()
@@ -50,6 +51,9 @@ class ZDCRecommendViewController: UIViewController {
         
         //设置UI界面
         setupUI()
+        
+        //数据请求
+        loadData()
     }
 
     
@@ -66,19 +70,27 @@ extension ZDCRecommendViewController{
     }
 }
 
+//MARK:- 请求数据
+extension ZDCRecommendViewController{
+
+    private func loadData(){
+        recommendViewModel.requestData { 
+            self.collcetionView.reloadData()
+        }
+    }
+}
+
 //MARK:- 遵守UICollectionView数据源的协议
 extension ZDCRecommendViewController : UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
 
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return 12
+        return recommendViewModel.anchorGroups.count
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if section == 0 {
-            return 8
-        }
+        let group = recommendViewModel.anchorGroups[section]
         
-        return 4
+        return group.anchors.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -98,9 +110,10 @@ extension ZDCRecommendViewController : UICollectionViewDataSource, UICollectionV
     
     func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
         //1、 取出setion的HeaderView
-        let headerView = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: kHeaderViewID, forIndexPath: indexPath)
+        let headerView = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: kHeaderViewID, forIndexPath: indexPath) as! ZDCCollectionHeaderView
         
-        
+        //2、取出模型
+        headerView.group = recommendViewModel.anchorGroups[indexPath.section]
         
         return headerView
     }

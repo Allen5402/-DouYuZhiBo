@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR">
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="ZDCCollectionHeaderView" customModule="DouYuZB" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
@@ -54,6 +54,10 @@
                 <constraint firstItem="MSh-gR-gFD" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="10" id="sa2-GP-9Vy"/>
                 <constraint firstItem="MSh-gR-gFD" firstAttribute="top" secondItem="7O2-TS-9zy" secondAttribute="bottom" constant="11" id="ziA-oc-Mas"/>
             </constraints>
+            <connections>
+                <outlet property="iconImageView" destination="MSh-gR-gFD" id="S4f-RC-X4A"/>
+                <outlet property="titleLable" destination="U1I-EC-l8J" id="CYL-FQ-pz2"/>
+            </connections>
         </collectionReusableView>
     </objects>
     <resources>
