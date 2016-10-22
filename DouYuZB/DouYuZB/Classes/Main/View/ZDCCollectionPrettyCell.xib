@@ -29,7 +29,7 @@
                             <constraint firstAttribute="height" constant="16" id="sL9-2B-LRw"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_cell_default_phone" translatesAutoresizingMaskIntoConstraints="NO" id="MXc-6H-HEg">
@@ -75,6 +75,12 @@
                 <constraint firstItem="MXc-6H-HEg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="x1U-db-9bH"/>
             </constraints>
             <size key="customSize" width="177" height="228"/>
+            <connections>
+                <outlet property="cityBtn" destination="TlU-5i-HYc" id="HKH-tB-cGu"/>
+                <outlet property="defaultImageView" destination="MXc-6H-HEg" id="3BG-Bz-zK2"/>
+                <outlet property="nickNameLabel" destination="VlT-KW-xZD" id="rTs-Us-7jm"/>
+                <outlet property="onlineLabel" destination="CgA-lu-Se3" id="ZcZ-U6-bth"/>
+            </connections>
             <point key="canvasLocation" x="376.5" y="416"/>
         </collectionViewCell>
     </objects>

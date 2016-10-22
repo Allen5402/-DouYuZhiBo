@@ -95,14 +95,23 @@ extension ZDCRecommendViewController : UICollectionViewDataSource, UICollectionV
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
-        //1、定义cell
-        var cell : UICollectionViewCell!
+        //1、取出模型对象
+        let group = recommendViewModel.anchorGroups[indexPath.section]
+        let anchor = group.anchors[indexPath.item]
+        
+        var cell : ZDCBaseCollectionCell
         
         //2、取出cell
         if indexPath.section == 1 {
-            cell = collectionView.dequeueReusableCellWithReuseIdentifier(kPrettyCellID, forIndexPath: indexPath)
+            cell = collectionView.dequeueReusableCellWithReuseIdentifier(kPrettyCellID, forIndexPath: indexPath) as! ZDCCollectionPrettyCell
+            
+            cell.anchor = anchor
+
         }else{
-            cell = collectionView.dequeueReusableCellWithReuseIdentifier(kNormalCellID, forIndexPath: indexPath)
+            cell = collectionView.dequeueReusableCellWithReuseIdentifier(kNormalCellID, forIndexPath: indexPath) as! ZDCCollectionNormalCell
+            
+            cell.anchor = anchor
+            
         }
         
         return cell

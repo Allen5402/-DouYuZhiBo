@@ -38,6 +38,7 @@
 		9FB0857C1DB5496000B376A8 /* ZDCCollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB0857A1DB5496000B376A8 /* ZDCCollectionPrettyCell.swift */; };
 		9FB0857D1DB5496000B376A8 /* ZDCCollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FB0857B1DB5496000B376A8 /* ZDCCollectionPrettyCell.xib */; };
 		9FB085811DB5505A00B376A8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB085801DB5505A00B376A8 /* MainViewController.swift */; };
+		9FF983DF1DBBAA5200D7AA26 /* ZDCBaseCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF983DD1DBBAA5200D7AA26 /* ZDCBaseCollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		9FB0857A1DB5496000B376A8 /* ZDCCollectionPrettyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDCCollectionPrettyCell.swift; sourceTree = "<group>"; };
 		9FB0857B1DB5496000B376A8 /* ZDCCollectionPrettyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZDCCollectionPrettyCell.xib; sourceTree = "<group>"; };
 		9FB085801DB5505A00B376A8 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9FF983DD1DBBAA5200D7AA26 /* ZDCBaseCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDCBaseCollectionCell.swift; sourceTree = "<group>"; };
 		A1C193AE323155F05BFA7848 /* Pods-DouYuZBUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYuZBUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouYuZBUITests/Pods-DouYuZBUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B48A8F616D693DD022CFB155 /* Pods-DouYuZB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYuZB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouYuZB/Pods-DouYuZB.debug.xcconfig"; sourceTree = "<group>"; };
 		F7A64674D4BCEA522315483F /* Pods-DouYuZB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYuZB.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouYuZB/Pods-DouYuZB.release.xcconfig"; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 			children = (
 				9F0A64411DB1A351002B3FA9 /* ZDCPageTitleView.swift */,
 				9F0A64451DB1B8C7002B3FA9 /* ZDCPageContentView.swift */,
+				9FF983DD1DBBAA5200D7AA26 /* ZDCBaseCollectionCell.swift */,
 				9F7F83961DB4ADC60078FBBB /* ZDCCollectionNormalCell.swift */,
 				9F7F83971DB4ADC60078FBBB /* ZDCCollectionNormalCell.xib */,
 				9FB0857A1DB5496000B376A8 /* ZDCCollectionPrettyCell.swift */,
@@ -691,6 +694,7 @@
 			files = (
 				9F0A643D1DB12DEA002B3FA9 /* ZDCHomeViewController.swift in Sources */,
 				9F5E70EA1DB0F2CF00E8A4AC /* AppDelegate.swift in Sources */,
+				9FF983DF1DBBAA5200D7AA26 /* ZDCBaseCollectionCell.swift in Sources */,
 				9F7F83981DB4ADC60078FBBB /* ZDCCollectionNormalCell.swift in Sources */,
 				9F8554111DBB504E002CC826 /* ZDCRecommendViewModel.swift in Sources */,
 				9FB085811DB5505A00B376A8 /* MainViewController.swift in Sources */,
